@@ -1,8 +1,11 @@
 import React from 'react'
 import Featured from '../../components/featured/Featured'
-import Header from '../../components/Header/Header'
-import Navbar from '../../components/Navbar/Navbar'
+import Header from '../../components/header/Header'
+import Navbar from '../../components/navbar/Navbar'
 import PropertyList from '../../components/propertyList/PropertyList'
+import FeaturedProperties from '../../components/featuredProperties/FeaturedProperties'
+import MailList from '../../components/mailList/MailList'
+import Footer from '../../components/footer/Footer'
 import './home.css'
 
 const Home = () => {
@@ -19,6 +22,9 @@ const Home = () => {
                 <h2 className="homeTitle">
                     Home guests love
                 </h2>
+                <FeaturedProperties />
+                <MailList />
+                <Footer />
             </div>
         </div>
     )
