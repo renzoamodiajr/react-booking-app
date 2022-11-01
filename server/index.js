@@ -6,6 +6,7 @@ import authRoute from "./routes/auth.js"
 import usersRoute from "./routes/users.js"
 import hotelsRoute from "./routes/hotels.js"
 import roomsRoute from "./routes/rooms.js"
+import cookierParser from "cookie-parser"
 
 env.config()
 
@@ -31,6 +32,7 @@ app.listen(8800, () => {
 })
 
 // MIDDLEWARES - START
+app.use(cookierParser())
 app.use(express.json())
 
 // routes
